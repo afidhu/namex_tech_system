@@ -12,6 +12,8 @@ import Project from './components/pages/Project'
 import Contact from './components/pages/Contact'
 import NavBar from './components/includes/navbar/NavBar'
 import Header from './components/includes/header/Header'
+import Footer from './components/includes/footer/Footer'
+import MainLayout from './components/includes/MainLayout'
 
 
 
@@ -20,19 +22,23 @@ function App() {
 
   return (
      <BrowserRouter>
-      <nav>
+      {/* <nav>
         <Header/>
-        <NavBar/>
+        {/* <NavBar/> */}
         {/* <Link to="/">Home</Link>
         <Link to="/about">About</Link> */}
-      </nav>
+      {/* </nav>  */}
+
+      
 
       <Routes>
+        <Route element={<MainLayout />}>
         <Route path="/" element={<MyIndex />} />
         <Route path="/about" element={<About />} />
         <Route path="/service" element={<Service />} />
         <Route path="/project" element={<Project />} />
         <Route path="/contact" element={<Contact />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   )

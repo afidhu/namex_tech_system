@@ -6,7 +6,7 @@ export default function NavBar() {
   return (
               <nav className="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 px-4 px-lg-5">
                 <Link to="/" className="navbar-brand d-flex align-items-center">
-                    <h2  style={{color:"blue"}} >Namex Technology</h2>
+                    <h2  style={{color:"blue"}} >Namex Technologies</h2>
                 </Link>
                 <button type="button" className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span className="navbar-toggler-icon"></span>
@@ -28,6 +28,7 @@ export default function NavBar() {
                             </div>
                         </div>
                         <Link to="/contact" className="nav-item nav-link">Contact</Link>
+                        
                     </div>
                     <div className="h-100 d-lg-inline-flex align-items-center d-none">
                         <Link to="#" className="btn btn-square rounded-circle  me-2" style={{backgroundColor:"blue"}} ><i className="fab fa-facebook-f text-white"></i></Link>

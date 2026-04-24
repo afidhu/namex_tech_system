@@ -1,0 +1,36 @@
+
+.partner-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(250px * 14);
+  animation: scroll 25s linear infinite;
+}
+
+.slide {
+  width: 250px;
+  flex-shrink: 0;
+  text-align: center;
+  padding: 10px;
+}
+
+.slide img {
+  width: 100px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
